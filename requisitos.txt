@@ -1,0 +1,9 @@
+flask
+playwright
+dash
+dash-bootstrap-components
+plotly
+pandas
+openpyxl
+python-dotenv
+python-magic

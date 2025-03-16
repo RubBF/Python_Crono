@@ -1,0 +1,39 @@
+# Ignorar entornos virtuales de Python
+.venv/
+venv/
+ENV/
+
+# Ignorar archivos compilados de Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignorar archivos de configuración de IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Ignorar datos de ejecución
+data/evidencias/
+data/resultados.json
+data/resultados.xlsx
+data/listado_postulaciones.xlsx
+
+# Ignorar logs y caché
+*.log
+*.cache
+*.db
+
+# Ignorar dependencias locales
+node_modules/
+npm-debug.log
+
+# Ignorar archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar credenciales y configuraciones sensibles
+.env
+*.pem
+*.key
