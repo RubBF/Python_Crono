@@ -1,0 +1,14 @@
+[
+    {
+        "rut": "13351888-6",
+        "status": "success",
+        "evidencia": "data/evidencias/rut_13351888-6.png",
+        "usuario_id": 1
+    },
+    {
+        "rut": "11317379-3",
+        "status": "success",
+        "evidencia": "data/evidencias/rut_11317379-3.png",
+        "usuario_id": 2
+    }
+]
