@@ -1,0 +1,9 @@
+🟢 Usuario 1 iniciando sesión...
+🟢 Usuario 2 iniciando sesión...
+🔎 Usuario 1 consultando RUT: 13351888-6
+🔎 Usuario 2 consultando RUT: 11317379-3
+🔴 Usuario 1 cerrando sesión
+✅ Consulta finalizada para Usuario 1 - RUT 13351888-6
+🔴 Usuario 2 cerrando sesión
+✅ Consulta finalizada para Usuario 2 - RUT 11317379-3
+📄 Reporte guardado en 'data/resultados.json'

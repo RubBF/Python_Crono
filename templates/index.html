@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Concurrencia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Sistema de Concurrencia - Team QA</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenido principal -->
+        <div class="container mt-4">
+            <h1 class="text-center">Sistema de Concurrencia - Team QA</h1>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <label for="num_conexiones">Cantidad de conexiones:</label>
+                            <input id="num_conexiones" type="number" value="5" min="1" step="1" class="form-control">
+                            <br>
+                            <label for="modo_ejecucion">Modo de ejecución:</label>
+                            <div id="modo_ejecucion" class="btn-group" role="group">
+                                <input type="radio" class="btn-check" name="modo_ejecucion" id="headless" value="headless" checked>
+                                <label class="btn btn-outline-primary" for="headless">Headless</label>
+                                <input type="radio" class="btn-check" name="modo_ejecucion" id="visible" value="visible">
+                                <label class="btn btn-outline-primary" for="visible">Visible</label>
+                            </div>
+                            <br>
+                            <button id="btn_ejecutar" class="btn btn-primary mt-2">Ejecutar</button>
+                            <br>
+                            <div id="mensaje" class="mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <h3 class="mt-4">Resultados</h3>
+            <div id="tabla_resultados"></div>
+        </div>
+
+        <!-- Modal para ver imagen en grande -->
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Evidencia</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="imagen_modal" src="" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="cerrar_modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-4 text-center">
+            <p>&copy; 2023 Team QA. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts de Dash -->
+    <script src="_dash-component-suites/dash/dash.js"></script>
+    <script src="_dash-component-suites/dash_bootstrap_components/dash_bootstrap_components.js"></script>
+    <script src="_dash-component-suites/dash_table/dash_table.js"></script>
+</body>
+</html>
